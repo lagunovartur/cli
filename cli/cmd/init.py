@@ -2,9 +2,9 @@ import os
 from argparse import ArgumentParser, Namespace
 from pathlib import Path
 
-from abstract import Command
-from config import config
-from runner import run
+from cli.abstract import Command
+from cli.config import config
+from cli.runner import run
 
 
 class InLink(Command):
@@ -65,9 +65,3 @@ def in_unhook():
 in_link = InLink()
 init = Init()
 
-__all__ = [
-    'init',
-    'in_link',
-    'in_hook',
-    'in_unhook',
-]

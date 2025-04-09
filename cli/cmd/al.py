@@ -1,6 +1,7 @@
-from abstract import Command
-from runner import run
 from argparse import ArgumentParser, Namespace
+
+from cli.abstract import Command
+from cli.runner import run
 
 
 @run(from_env='db', execute=True)

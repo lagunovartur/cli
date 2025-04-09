@@ -1,4 +1,5 @@
-from runner import run
+from cli.runner import run
+
 
 @run()
 def git(*args):

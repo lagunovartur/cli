@@ -1,4 +1,4 @@
-from runner import run
+from cli.runner import run
 
 
 def chk_style():

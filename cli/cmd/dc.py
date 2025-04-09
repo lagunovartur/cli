@@ -1,7 +1,7 @@
 from argparse import ArgumentParser, Namespace
 
-from abstract import Command
-from runner import run
+from cli.runner import run
+
 
 @run(from_env='compose')
 def dc(*args):

@@ -1,9 +1,10 @@
 import datetime as dt
 import os
 from argparse import Namespace, ArgumentParser
-from config import config
-from abstract import Command
-from runner import run
+
+from cli.abstract import Command
+from cli.config import config
+from cli.runner import run
 
 
 @run(from_env='db', execute=True)
